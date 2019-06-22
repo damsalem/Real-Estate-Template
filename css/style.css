@@ -192,7 +192,6 @@ header .h-primary-content .cta:hover {
 }
 
 #section-3 .img-box {
-  max-width: 200px;
   width: auto;
   height: 180px;
   overflow: hidden;
@@ -256,16 +255,25 @@ footer .border-col {
   #section-2 .img-container {
     width: 100%;
   }
+  #section-3 .img-box {
+    height: 110px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   #section-1 .img-box {
     height: 115px;
   }
+  #section-3 .img-box {
+    height: 115px;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   #section-1 .img-box {
+    height: 165px;
+  }
+  #section-3 .img-box {
     height: 165px;
   }
 }

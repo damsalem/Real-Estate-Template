@@ -190,7 +190,7 @@ header {
   }
 
   .img-box {
-    max-width: 200px;
+    // max-width: 200px;
     width: auto;
     height: 180px;
     overflow: hidden;
@@ -265,6 +265,12 @@ footer {
       width: 100%;
     }
   }
+
+  #section-3 {
+    .img-box {
+      height: 110px;
+    }
+  }
   //
 }
 //// END EXTRA SMALL DEVICES
@@ -276,6 +282,12 @@ footer {
       height: 115px;
     }
   }
+
+  #section-3 {
+    .img-box {
+      height: 115px;
+    }
+  }
   //
 }
 //// END SMALL DEVICES
@@ -283,6 +295,12 @@ footer {
 //MEDIUM devices (desktops, 992px and up):
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   #section-1 {
+    .img-box {
+      height: 165px;
+    }
+  }
+
+  #section-3 {
     .img-box {
       height: 165px;
     }
