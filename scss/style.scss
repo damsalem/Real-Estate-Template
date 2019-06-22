@@ -1,0 +1,259 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  background: url(../images/hero-image.jpg) no-repeat center;
+  background-size: cover;
+  height: 600px;
+
+  .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 600px;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+  }
+
+  .container {
+    position: relative;
+    height: 100%;
+    z-index: 3;
+
+    .row {
+      height: 100%;
+      align-items: center;
+    }
+  }
+
+  .h-primary-content {
+    h1 {
+      font-size: 3em;
+      font-weight: bold;
+      color: #fff;
+      margin-top: 50px;
+    }
+
+    a {
+      color: #000;
+      &:hover {
+        color: #000;
+      }
+    }
+    .cta {
+      display: inline-block;
+      position: relative;
+      background-color: #fff;
+      border: #fff solid 1px;
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin-top: 25px;
+      transition: 300ms;
+      font-weight: bold;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #444;
+        color: #fff;
+        border: #fff solid 1px;
+      }
+    }
+  }
+}
+
+#section-1 {
+  padding: 80px 0;
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 80px;
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    color: #787878;
+    font-size: 30px;
+  }
+
+  .img-box {
+    width: auto;
+    height: 180px;
+    overflow: hidden;
+    padding: 0px 5px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    transition: 300ms;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+#section-2 {
+  padding: 80px 0;
+  background-color: #ddd;
+
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 80px;
+  }
+
+  .img-container {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.3);
+      height: 700px;
+      width: 100%;
+      top: 0;
+      z-index: 2;
+      transition: 300ms;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .office-text {
+      z-index: 3;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.7);
+      width: 100%;
+      padding: 10px 0;
+    }
+  }
+}
+
+#section-3 {
+  padding: 80px 0;
+
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 80px;
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    color: #787878;
+    font-size: 30px;
+  }
+
+  .img-box {
+    max-width: 200px;
+    width: auto;
+    height: 180px;
+    overflow: hidden;
+  }
+
+  img {
+    width: auto;
+    height: 100%;
+    transition: 300ms;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+footer {
+  padding: 80px 0;
+
+  .icon-col {
+    display: flex;
+    justify-content: center;
+  }
+
+  .border-col {
+    border-bottom: #212529 solid 1px;
+  }
+}
+
+////
+//// BOOTSTRAP'S MEDIA QUERIES
+////
+
+//EXTRA SMALL devices (phones up to 768px):
+@media only screen and (max-width: 768px) {
+  #section-1 {
+    .img-box {
+      height: 76px;
+    }
+  }
+
+  #section-2 {
+    .img-container {
+      width: 100%;
+    }
+  }
+  //
+}
+//// END EXTRA SMALL DEVICES
+
+//SMALL devices (tablets, 768px and up):
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #section-1 {
+    .img-box {
+      height: 115px;
+    }
+  }
+  //
+}
+//// END SMALL DEVICES
+
+//MEDIUM devices (desktops, 992px and up):
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #section-1 {
+    .img-box {
+      height: 165px;
+    }
+  }
+  //
+}
+//// END MEDIUM DEVICES
+
+//LARGE devices (large desktops, 1200px and up):
+@media only screen and (min-width: 1200px) {
+  //Style goes here
+  //
+}
+//// END LARGE DEVICES
