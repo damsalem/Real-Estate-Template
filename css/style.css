@@ -55,6 +55,7 @@ header .h-primary-content a:hover {
 header .h-primary-content .cta {
   display: inline-block;
   position: relative;
+  color: #444;
   background-color: #fff;
   border: #fff solid 1px;
   border-radius: 10px;
@@ -79,7 +80,7 @@ header .h-primary-content .cta:hover {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  color: #000;
+  color: #444;
   padding-bottom: 80px;
 }
 
@@ -94,6 +95,8 @@ header .h-primary-content .cta:hover {
   height: 180px;
   overflow: hidden;
   padding: 0px 5px;
+  display: flex;
+  align-items: center;
 }
 
 #section-1 img {
@@ -115,8 +118,16 @@ header .h-primary-content .cta:hover {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  color: #000;
+  color: #444;
   padding-bottom: 80px;
+}
+
+#section-2 h3 {
+  color: #444;
+}
+
+#section-2 p {
+  color: #444;
 }
 
 #section-2 .img-container {
@@ -133,6 +144,21 @@ header .h-primary-content .cta:hover {
   height: auto;
 }
 
+#section-2 .img-container .office-text {
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  padding: 10px 0;
+}
+
+#section-2 .img-container .office-text:hover + .overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 #section-2 .img-container .overlay {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
@@ -147,17 +173,6 @@ header .h-primary-content .cta:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-#section-2 .img-container .office-text {
-  z-index: 3;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.7);
-  width: 100%;
-  padding: 10px 0;
-}
-
 #section-3 {
   padding: 80px 0;
 }
@@ -166,7 +181,7 @@ header .h-primary-content .cta:hover {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  color: #000;
+  color: #444;
   padding-bottom: 80px;
 }
 

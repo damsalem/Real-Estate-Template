@@ -53,6 +53,7 @@ header {
     .cta {
       display: inline-block;
       position: relative;
+      color: #444;
       background-color: #fff;
       border: #fff solid 1px;
       border-radius: 10px;
@@ -77,7 +78,7 @@ header {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    color: #000;
+    color: #444;
     padding-bottom: 80px;
   }
 
@@ -92,6 +93,8 @@ header {
     height: 180px;
     overflow: hidden;
     padding: 0px 5px;
+    display: flex;
+    align-items: center;
   }
 
   img {
@@ -113,8 +116,16 @@ header {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    color: #000;
+    color: #444;
     padding-bottom: 80px;
+  }
+
+  h3 {
+    color: #444;
+  }
+
+  p {
+    color: #444;
   }
 
   .img-container {
@@ -130,6 +141,21 @@ header {
       height: auto;
     }
 
+    .office-text {
+      z-index: 3;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.7);
+      width: 100%;
+      padding: 10px 0;
+
+      &:hover + .overlay {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+
     .overlay {
       position: absolute;
       background-color: rgba(0, 0, 0, 0.3);
@@ -143,17 +169,6 @@ header {
         background-color: rgba(0, 0, 0, 0.2);
       }
     }
-
-    .office-text {
-      z-index: 3;
-      position: absolute;
-      bottom: 0;
-      text-align: center;
-      color: #000;
-      background-color: rgba(255, 255, 255, 0.7);
-      width: 100%;
-      padding: 10px 0;
-    }
   }
 }
 
@@ -164,7 +179,7 @@ header {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    color: #000;
+    color: #444;
     padding-bottom: 80px;
   }
 
