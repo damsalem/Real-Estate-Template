@@ -248,6 +248,24 @@ footer {
 }
 
 ////
+//// SLICK SLIDER MEDIA QUERY
+////
+//EXTRA EXTRA SMALL devices (phones up to 480px):
+@media only screen and (max-width: 480px) {
+  #section-1 {
+    .img-box {
+      height: 230px !important;
+    }
+  }
+
+  #section-3 {
+    .img-box {
+      height: 350px !important;
+    }
+  }
+}
+
+////
 //// BOOTSTRAP'S MEDIA QUERIES
 ////
 

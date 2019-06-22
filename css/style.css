@@ -248,6 +248,15 @@ footer .border-col {
   border-bottom: #212529 solid 1px;
 }
 
+@media only screen and (max-width: 480px) {
+  #section-1 .img-box {
+    height: 230px !important;
+  }
+  #section-3 .img-box {
+    height: 350px !important;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #section-1 .img-box {
     height: 76px;
