@@ -208,6 +208,31 @@ header {
       opacity: 0.8;
     }
   }
+
+  .cta-col {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    background-color: #444;
+    border: #444 solid 2px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    transition: 300ms;
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #fff;
+      color: #444;
+      border: #444 solid 2px;
+    }
+  }
 }
 
 footer {
