@@ -250,10 +250,10 @@ footer .border-col {
 
 @media only screen and (max-width: 480px) {
   #section-1 .img-box {
-    height: 230px !important;
+    height: 160px !important;
   }
   #section-3 .img-box {
-    height: 350px !important;
+    height: 250px !important;
   }
 }
 
